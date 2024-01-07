@@ -29,10 +29,10 @@ always @(posedge clk)
    begin
 	    if( reset == 0)
 		   begin
-   		 out[0] <= in[0]^in[1]^in[2]^in[5]^in[6]^in[7]^crc[8]^crc[9]^crc[10]^crc[13]^crc[14]^crc[15];
-	       out[1] <= in[1]^in[2]^in[3]^in[6]^in[7]^crc[9]^crc[10]^crc[11]^crc[14]^crc[15];
-          out[2] <= in[0]^in[1]^in[3]^in[4]^in[5]^in[6]^crc[8]^crc[9]^crc[11]^crc[12]^crc[13]^crc[14];
-          out[3] <= in[0]^in[4]^crc[8]^crc[12];
+   		     out[0] <= in[0]^in[1]^in[2]^in[5]^in[6]^in[7]^crc[8]^crc[9]^crc[10]^crc[13]^crc[14]^crc[15];
+	         out[1] <= in[1]^in[2]^in[3]^in[6]^in[7]^crc[9]^crc[10]^crc[11]^crc[14]^crc[15];
+             out[2] <= in[0]^in[1]^in[3]^in[4]^in[5]^in[6]^crc[8]^crc[9]^crc[11]^crc[12]^crc[13]^crc[14];
+             out[3] <= in[0]^in[4]^crc[8]^crc[12];
 			 out[4] <= in[1]^in[5]^crc[9]^crc[13];
 			 out[5] <= in[0]^in[1]^in[5]^in[7]^crc[8]^crc[9]^crc[13]^crc[15];
 			 out[6] <= in[1]^in[2]^in[6]^crc[9]^crc[10]^crc[14];
