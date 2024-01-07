@@ -1,0 +1,156 @@
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "E:/MINI_PROJECT/Parallel/Project/Xylinx/Parallel/Parallel.xst" -ofn "E:/MINI_PROJECT/Parallel/Project/Xylinx/Parallel/Parallel.syr"
+Reading design: Parallel.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\MINI_PROJECT\Parallel\Project\Xylinx\Parallel\parallel_compute.v" into library work
+Parsing module <parallel_compute>.
+Analyzing Verilog file "E:\MINI_PROJECT\Parallel\Project\Xylinx\Parallel\clk_initial.v" into library work
+Parsing module <clk_initial>.
+Analyzing Verilog file "E:\MINI_PROJECT\Parallel\Project\Xylinx\Parallel\Parallel.v" into library work
+Parsing module <Parallel>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Parallel>.
+WARNING:HDLCompiler:872 - "E:\MINI_PROJECT\Parallel\Project\Xylinx\Parallel\Parallel.v" Line 31: Using initial value of crc since it is never assigned
+
+Elaborating module <clk_initial>.
+
+Elaborating module <parallel_compute>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Parallel>.
+    Related source file is "E:\MINI_PROJECT\Parallel\Project\Xylinx\Parallel\Parallel.v".
+    Summary:
+	no macro.
+Unit <Parallel> synthesized.
+
+Synthesizing Unit <clk_initial>.
+    Related source file is "E:\MINI_PROJECT\Parallel\Project\Xylinx\Parallel\clk_initial.v".
+    Found 40-bit register for signal <data>.
+    Summary:
+	inferred  40 D-type flip-flop(s).
+Unit <clk_initial> synthesized.
+
+Synthesizing Unit <parallel_compute>.
+    Related source file is "E:\MINI_PROJECT\Parallel\Project\Xylinx\Parallel\parallel_compute.v".
+    Found 16-bit register for signal <out>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <parallel_compute> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ 16-bit register                                       : 5
+ 40-bit register                                       : 1
+# Xors                                                 : 165
+ 1-bit xor2                                            : 90
+ 1-bit xor3                                            : 25
+ 1-bit xor4                                            : 15
+ 1-bit xor5                                            : 30
+ 1-bit xor6                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <data_34> in Unit <i0> is equivalent to the following 5 FFs/Latches, which will be removed : <data_35> <data_36> <data_37> <data_38> <data_39> 
+WARNING:Xst:1710 - FF/Latch <data_34> (without init value) has a constant value of 0 in block <i0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <data<39:34>> (without init value) have a constant value of 0 in block <clk_initial>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 114
+ Flip-Flops                                            : 114
+# Xors                                                 : 165
+ 1-bit xor2                                            : 90
+ 1-bit xor3                                            : 25
+ 1-bit xor4                                            : 15
+ 1-bit xor5                                            : 30
+ 1-bit xor6                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Parallel> ...
+
+Optimizing unit <clk_initial> ...
+
+Optimizing unit <parallel_compute> ...
+INFO:Xst:2261 - The FF/Latch <i1/out_13> in Unit <Parallel> is equivalent to the following 2 FFs/Latches, which will be removed : <i1/out_12> <i1/out_3> 
+INFO:Xst:2261 - The FF/Latch <i1/out_14> in Unit <Parallel> is equivalent to the following 5 FFs/Latches, which will be removed : <i1/out_10> <i1/out_8> <i1/out_6> <i1/out_4> <i1/out_1> 
+INFO:Xst:2261 - The FF/Latch <i1/out_15> in Unit <Parallel> is equivalent to the following 6 FFs/Latches, which will be removed : <i1/out_11> <i1/out_9> <i1/out_7> <i1/out_5> <i1/out_2> <i1/out_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Parallel, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 101
+ Flip-Flops                                            : 101
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 101   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.698ns (Maximum Frequency: 370.666MHz)
+   Minimum input arrival time before clock: 2.864ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: 4.409ns
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully

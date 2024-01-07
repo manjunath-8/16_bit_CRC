@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    15:48:42 12/22/2023 
+// Create Date:    19:37:56 01/05/2024 
 // Design Name: 
-// Module Name:    series 
+// Module Name:    Series 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module series(clk,reset,data_in,data_out);
+module Series(clk,reset,data_in,data_out);
 input clk,reset;
 input [33:0]data_in;
 

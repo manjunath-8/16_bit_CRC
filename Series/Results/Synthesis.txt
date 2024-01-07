@@ -1,27 +1,27 @@
 Started : "Synthesize - XST".
 Running xst...
-Command Line: xst -intstyle ise -ifn "E:/MINI_PROJECT/CRC_BLOCK/try.xst" -ofn "E:/MINI_PROJECT/CRC_BLOCK/try.syr"
-Reading design: try.prj
+Command Line: xst -intstyle ise -ifn "E:/MINI_PROJECT/Series/Project/Xylinx/Series/Series.xst" -ofn "E:/MINI_PROJECT/Series/Project/Xylinx/Series/Series.syr"
+Reading design: Series.prj
 
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "E:\MINI_PROJECT\CRC_BLOCK\try.v" into library work
-Parsing module <try>.
+Analyzing Verilog file "E:\MINI_PROJECT\Series\Project\Xylinx\Series\Series.v" into library work
+Parsing module <Series>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating module <try>.
-WARNING:HDLCompiler:872 - "E:\MINI_PROJECT\CRC_BLOCK\try.v" Line 35: Using initial value of crc since it is never assigned
+Elaborating module <Series>.
+WARNING:HDLCompiler:872 - "E:\MINI_PROJECT\Series\Project\Xylinx\Series\Series.v" Line 35: Using initial value of crc since it is never assigned
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
-Synthesizing Unit <try>.
-    Related source file is "E:\MINI_PROJECT\CRC_BLOCK\try.v".
+Synthesizing Unit <Series>.
+    Related source file is "E:\MINI_PROJECT\Series\Project\Xylinx\Series\Series.v".
     Found 16-bit register for signal <lfsr>.
     Found 7-bit register for signal <count>.
     Found 16-bit register for signal <crc_feed>.
@@ -39,7 +39,7 @@ Synthesizing Unit <try>.
 	inferred  89 D-type flip-flop(s).
 	inferred   5 Comparator(s).
 	inferred  35 Multiplexer(s).
-Unit <try> synthesized.
+Unit <Series> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -71,9 +71,9 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <try>.
+Synthesizing (advanced) Unit <Series>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-Unit <try> synthesized (advanced).
+Unit <Series> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -102,28 +102,28 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <data_0> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_1> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_2> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_3> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_4> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_5> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_6> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_7> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_8> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_9> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_10> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_11> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_12> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_13> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_14> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_15> (without init value) has a constant value of 0 in block <try>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_0> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_1> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_2> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_3> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_4> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_5> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_6> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_7> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_8> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_9> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_10> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_11> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_12> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_13> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_14> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_15> (without init value) has a constant value of 0 in block <Series>. This FF/Latch will be trimmed during the optimization process.
 
-Optimizing unit <try> ...
+Optimizing unit <Series> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block try, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block Series, actual ratio is 2.
 FlipFlop count_1 has been replicated 1 time(s)
 FlipFlop count_2 has been replicated 1 time(s)
 FlipFlop count_3 has been replicated 1 time(s)
@@ -165,7 +165,6 @@ clk                                | BUFGP                  | 78    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
-
 ----------------------------------------
 No asynchronous control signals found in this design
 
