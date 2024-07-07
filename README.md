@@ -6,3 +6,15 @@ Message corruption is a common problem in communication systems. The received si
 This paper was published in the proceedings of the International Conference on Emerging Trends in Microelectronics, Communication and Intelligent Systems (ETMCIS) 2024.
 
 ## Repository Structure
+### Parallel 
+- **Results**: Snaps of parallel architecture results.
+- **Xylinx Simulation**: verilog (.v) files of parallel architecture.
+- **Parallel Architecture**
+
+### Series 
+- **Results**: Snaps of series architecture results.
+- **Xylinx Simulation**: verilog (.v) files of series architecture.
+- **Series Architecture**
+
+## Citation
+If you find this repo useful in your project or research, please consider citing the publication.
