@@ -49,3 +49,6 @@ These steps, shown in the video, provide a detailed guide on how to implement VI
 
 ## Citation
 If you find this repo useful in your project or research, please consider citing the publication.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
